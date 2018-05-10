@@ -52,7 +52,7 @@
                 <ul class="keywords-container" data-bind="foreach: {data: apiArr}">
                     <li class="keyword" data-bind="text: name, attr: {id: id}, click: $parent.toggleKeyword"></li>
                 </ul>
-                <button class="btn reset-btn" data-bind="click: resetKeywords"><img src="img/ic_autorenew_black_24dp_1x.png" /><span class="expanded-refresh-text"> Reset Keywords: Unsort</span></button>
+                <button class="btn reset-btn" data-bind="click: resetKeywords"><img src="{{ url_for('static', filename='portfolio/img/ic_autorenew_black_24dp_1x.png') }}" /><span class="expanded-refresh-text"> Reset Keywords: Unsort</span></button>
             </ul>
         </div>
         <div class="sidebar-adjust container-fluid">

@@ -519,10 +519,17 @@ div.sidebar-adjust {
     }
 }
 
-@media only screen and (min-width: 1450px) {
-    .sidebar {
+@media only screen and (min-width: 1200px) {
+        .sidebar {
         display: block;
     }
+        div.sidebar-adjust {
+        margin-left: 215px;
+        padding: 0 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
     div.sidebar-adjust {
         margin-left: 250px;
         padding: 0 3.5rem 0 2.5rem;
@@ -538,7 +545,9 @@ div.sidebar-adjust {
 }
 
 @media only screen and (min-width: 1600px) {
+    .sidebar {
+        min-width: 250px;
+    }
     div.sidebar-adjust {
         padding: 0 7.5rem 0 2.5rem;
     }
-}

@@ -36,7 +36,7 @@
     <div class="wrapper">
         <div id="sidebar" class="sidebar light-text">
             <ul class="keywords-class-container">
-                <li id="server-class" class="keyword-class">Server</li>
+                <li id="server-class" class="keyword-class" data-container="body" data-toggle="popover" data-placement="right" data-content="Select skills to reorder projects">Server</li>
                 <ul class="keywords-container" data-bind="foreach: {data: serverArr}">
                     <li class="keyword" data-bind="text: name, attr: {id: id}, click: $parent.toggleKeyword"></li>
                 </ul>

@@ -1,4 +1,17 @@
 portfolioData = [
+  {"id": "5",
+  "order": "1",
+  "origOrder": "1",
+  "size": "port-lg",
+  "name": "Margin of Victory Visualized",
+  "description": "This <span class='keyspan keyspan-React'>React</span>-based web app depicts the nationwide results of the 2016 election of the US House of Representatives. Final vote tallies were extracted from <a class='bare-link' href='/var/www/Catalog/Catalog/static/portfolio/pdf/2016election_historygov.pdf'>PDF</a> using algorithms written in <span class='keyspan keyspan-Python'>Python</span>. Grayscale tones depict a state's average margin of victory on the map, while a comparison of each district is shown on the right. State and district details are displayed on user selection. The chart and map employ customized React components that utilize <span class='keyspan keyspan-JSX'>JSX</span> and <span class='keyspan keyspan-Javascript'>ES6 Javascript</span>. The SPA architecture allows for a responsive, dynamic UX/UI. <span class='keyspan keyspan-Bootstrap'>Bootstrap</span> is used ease of formatting.",
+  "skills": ["React", "Bootstrap", "JSX", "JSON"],
+  "alt": "Margin of Victory Visualized site by Nate Gindele",
+  "src": "/var/www/Catalog/Catalog/static/portfolio/img/margin_of_victory",
+  "imgOrder": "1",
+  "url": "http://nategindele.com/Margin-of-Victory",
+  "gitUrl": "https://github.com/ncgindele/Margin-of-Victory"},
+
     {"id": "4",
     "order": "1",
     "origOrder": "1",

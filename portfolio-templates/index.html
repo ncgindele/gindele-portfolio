@@ -22,7 +22,7 @@
             <div class="hamburger-bar"></div>
             <div class="hamburger-bar"></div>
         </button>
-        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="hamburger-btn">
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="hamburger-btn">
             <a class="dropdown-item" href="#">Home</a>
             <a class="dropdown-item" href="{{ url_for('static', filename='portfolio/pdf/gindele_resume.pdf') }}">Resum&eacute;</a>
                 <a class="dropdown-item" href="#recent-work">Recent Work</a>
@@ -36,7 +36,7 @@
     <div class="wrapper">
         <div id="sidebar" class="sidebar light-text">
             <ul class="keywords-class-container">
-                <li id="server-class" class="keyword-class" data-container="body" data-toggle="popover" data-placement="right" data-content="Select skills to reorder projects">Server</li>
+                <li id="server-class" class="keyword-class" data-container="body" data-toggle="popover" data-placement="left" data-content="Select skills to reorder projects">Server</li>
                 <ul class="keywords-container" data-bind="foreach: {data: serverArr}">
                     <li class="keyword" data-bind="text: name, attr: {id: id}, click: $parent.toggleKeyword"></li>
                 </ul>
@@ -52,7 +52,7 @@
                 <ul class="keywords-container" data-bind="foreach: {data: apiArr}">
                     <li class="keyword" data-bind="text: name, attr: {id: id}, click: $parent.toggleKeyword"></li>
                 </ul>
-                <button class="btn reset-btn" data-bind="click: resetKeywords"><img src="img/ic_autorenew_black_24dp_1x.png" /><span class="expanded-refresh-text"> Reset Keywords: Unsort</span></button>
+                <button class="btn reset-btn" data-bind="click: resetKeywords"><img src="{{ url_for('static', filename='portfolio/img/ic_autorenew_black_24dp_1x.png') }}" /><span class="expanded-refresh-text"> Reset Keywords: Unsort</span></button>
             </ul>
         </div>
         <div class="sidebar-adjust container-fluid">

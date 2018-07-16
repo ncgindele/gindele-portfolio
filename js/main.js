@@ -24,14 +24,8 @@ $(function() {
             $('.port-card').each(function(index, value) {
                 var id = $( this ).attr('id').slice(10);
                 var item = self.getPortItem(id);
-                // var newItem = item;
                 var order = item.origOrder - $( this ).find('.active').length;
                 $( this ).attr('style', 'order:' + order);
-                // self.portfolioArr.replace(item, newItem);
-
-                // var pos = self.portfolioArr.indexOf(item);
-                // self.portfolioArr.splice(pos, 1);
-                // self.portfolioArr.splice(pos, 0, newItem);
             });
         };
         self.resetKeywords = function() {
